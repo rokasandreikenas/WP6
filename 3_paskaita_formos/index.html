@@ -4,14 +4,51 @@
     <title>Formos</title>
 
     <style>
+      .contact-title {
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        /* margin: 0 auto 0 auto */
+        /* padding: 10px 15px 20px 30px; */
+        /* tas pats kas  */
+        /* padding-top: 10px;
+           padding-right: 15px;
+           padding-bottom: 20px;
+           padding-left: 30px; */
+      }
+
+      .contact-form {
+        width: 600px;
+        margin: 0 auto;
+        background-color: rgba(240, 46, 170, 0.1);
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+          rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+          rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+      }
+
       .form-item {
         margin-bottom: 16px;
+      }
+
+      .submit-button {
+        background-color: rgba(240, 46, 170, 0.8);
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .submit-button:hover {
+        background-color: rgb(240, 46, 170);
       }
     </style>
   </head>
   <body>
-    <h1>Kontaktų forma</h1>
-    <form>
+    <h1 class="contact-title">Kontaktų forma</h1>
+    <form class="contact-form">
       <div class="form-item">
         <label for="name">Vardas</label>
         <input
@@ -92,7 +129,7 @@
       </div>
 
       <!-- <input type="submit" value="Siųsti" /> -->
-      <button type="submit">Siųsti</button>
+      <button type="submit" class="submit-button">Siųsti</button>
     </form>
   </body>
 </html>
