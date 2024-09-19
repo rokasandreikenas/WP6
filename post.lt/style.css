@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.black-header {
+  background-color: black;
+  text-align: center;
+  padding: 16px;
+}
+
+a {
+  color: white;
+  margin: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+}
+
+.hero {
+  background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/262520/262520_00_2x.jpg?20220907171556");
+  height: 200px;
+  padding: 32px;
+}
+
+.discount-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 200px;
+  padding: 16px;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.discount-item {
+  margin-bottom: 16px;
+}
