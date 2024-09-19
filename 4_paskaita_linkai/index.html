@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .header {
+        background-color: black;
+        padding: 16px;
+        text-align: center;
+      }
+
+      .header a {
+        color: white;
+        margin: 0 16px;
+      }
+
+      a {
+        color: red;
+      }
+
+      #section1 {
+        background-color: yellow;
+        /* vh - view height */
+        height: 100vh;
+
+        /* Eisime po keliu paskaitu!!! */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #section2 {
+        background-color: green;
+        height: 100vh;
+
+        /* Eisime po keliu paskaitu!!! */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #section3 {
+        background-color: red;
+        height: 100vh;
+
+        /* Eisime po keliu paskaitu!!! Centravimas x ir y asyje */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+
+        right: 40px;
+        bottom: 40px;
+
+        background-color: #0c9;
+        color: #fff;
+        border-radius: 50px;
+        box-shadow: 2px 2px 3px #999;
+
+        /* Eisime po keliu paskaitu!!! Centravimas x ir y asyje */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- rodykle kuri perkelia virsun -->
+    <div class="header" id="header">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
+    <a href="https://www.iamjunior.lt/">Aplankykite mūsų svetainę</a>
+    <br />
+    <br />
+    <!-- target="_blank" atidaro naujam skirtuke  -->
+    <a href="https://www.google.lt/" target="_blank">
+      Aplankykite Google svetainę
+    </a>
+    <br />
+    <br />
+    <ul>
+      <li><a href="#section1">Gyvunai</a></li>
+      <li><a href="#section2">Zmones</a></li>
+      <li><a href="#section3">Automobiliai</a></li>
+    </ul>
+    <div id="section1">Informacija apie gyvunus</div>
+    <div id="section2">Informacija apie zmones</div>
+    <div id="section3">Informacija apie automobilius</div>
+    <a href="#header" class="float">^</a>
+  </body>
+</html>
