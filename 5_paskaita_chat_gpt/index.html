@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktinė forma</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="contact-form" action="/submit-form" method="POST">
+      <h1 class="form-title">Susisiekite su mumis</h1>
+
+      <label class="form-label" for="name">Vardas:</label>
+      <input class="form-input" type="text" id="name" name="name" required />
+
+      <label class="form-label" for="email">El. paštas:</label>
+      <input class="form-input" type="email" id="email" name="email" required />
+
+      <label class="form-label" for="message">Žinutė:</label>
+      <textarea
+        class="form-textarea"
+        id="message"
+        name="message"
+        rows="5"
+        required
+      ></textarea>
+
+      <button class="form-button" type="submit">Siųsti</button>
+    </form>
+  </body>
+</html>
