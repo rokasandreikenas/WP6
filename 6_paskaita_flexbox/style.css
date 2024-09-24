@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.flex-container {
+  /* Paverčia į flex containerį */
+  display: flex;
+  flex-direction: row; /* by default yra row. Jeigu padarau column, X ir Y apsiverčia */
+  align-items: center; /* Y ašis (aukštyn/žemyn) jeigu flex-direction: row */
+  justify-content: center; /* X axis (kairė/dešinė) jeigu flex-direction: row */
+  height: 100%;
+  gap: 16px; /* tarpai tarp elementų */
+}
+
+.flex-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100px;
+  background-color: aquamarine;
+  border: 1px solid black;
+}
