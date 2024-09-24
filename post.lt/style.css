@@ -5,17 +5,24 @@
 
 .black-header {
   background-color: black;
-  text-align: center;
-  padding: 16px;
+  padding: 8px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-a {
+.black-header img {
+  height: 30px;
+}
+
+.black-header a {
   color: white;
-  margin: 16px;
+  margin: 0px 8px;
   text-decoration: none;
+  font-size: 12px;
 }
 
-a:hover {
+.black-header a:hover {
   color: grey;
 }
 
@@ -23,11 +30,58 @@ a:hover {
   background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/262520/262520_00_2x.jpg?20220907171556");
   height: 200px;
   padding: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.shipment-tracking {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 180px;
+}
+
+.shipment-tracking a {
+  padding: 12px 16px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shipment-tracking a:hover {
+  background-color: #e5e5e5;
+}
+
+.shipment-tracking a div i {
+  margin-right: 4px;
+}
+
+.first-link {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.divider {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.send-link {
+  background-color: #ce252d;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.send-link:hover {
+  background-color: #a11d24 !important;
 }
 
 .discount-card {
   background-color: rgba(255, 255, 255, 0.5);
-  width: 200px;
   padding: 16px;
   height: 50%;
   border-radius: 5px;
