@@ -1,0 +1,58 @@
+.button {
+  padding: 10px 20px;
+  background-color: #ff6a3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  /* property name | duration | easing function */
+  /* transition: background-color 0.3s ease-in-out; */
+  /* arba */
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #ffba43;
+}
+
+/* @keyframes example {
+  from {
+    background-color: #ff6a3e;
+  }
+  to {
+    background-color: #ffba43;
+  }
+} */
+
+@keyframes example {
+  from {
+    background-color: #ff6a3e;
+  }
+
+  to {
+    background-color: #ffba43;
+  }
+}
+
+.animate {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6a3e;
+  animation: example 3s infinite alternate;
+}
+
+.another-button {
+  padding: 10px 20px;
+  background-color: #ff6a3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.another-button:active {
+  transition: 1s; /* per kiek laiko įvyksta transformacija */
+  transform: scale(0.95); /* mažina dydį */
+  transform: scale(1.05); /* didina dydį */
+
+  /* transform: rotate(360deg); */
+  /* transform: rotateY(180deg); */
+}
