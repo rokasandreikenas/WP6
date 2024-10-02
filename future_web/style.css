@@ -124,3 +124,8 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+i:hover {
+  transform: rotateY(360deg);
+  transition: transform 1s;
+}
