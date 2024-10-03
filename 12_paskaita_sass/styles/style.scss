@@ -1,0 +1,148 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius; /* visoms senoms chrome ir safari versijoms */
+  -moz-border-radius: $radius; /* visoms senoms mozila firefox versijoms */
+  border-radius: $radius;
+}
+
+@mixin container($margin) {
+  width: 1200px;
+  margin: $margin auto;
+}
+
+body {
+  background-color: $primary-color;
+}
+
+p {
+  background-color: white;
+  color: $primary-color;
+}
+
+h1,
+h2 {
+  color: $text-color;
+}
+
+button {
+  @include border-radius(10px);
+  // -webkit-border-radius: 10px;
+  // -moz-border-radius: 10px;
+  // border-radius: 10px;
+}
+
+.main-container {
+  @include container(16px);
+}
+
+.side-container {
+  @include container(32px);
+}
+
+// .recipes {
+//   padding: 24px;
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 16px;
+// }
+
+// .recipes .recipe-card {
+//   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+//   background-color: white;
+// }
+
+// .recipes .recipe-card .recipe-image {
+//   height: 300px;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+// .recipes .recipe-card h2 {
+//   padding: 8px;
+// }
+
+// .recipes .recipe-card .recipe-description {
+//   color: $text-color;
+//   padding: 8px;
+// }
+
+// .recipes .recipe-card .recipe-duration {
+//   color: grey;
+//   padding: 8px;
+// }
+
+.recipes {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  // & Ampersand
+
+  .recipe {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+
+    &-image {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    h2 {
+      padding: 8px;
+    }
+
+    // .recipe yra &
+    // .recipe-description
+    &-description {
+      color: $text-color;
+      padding: 8px;
+    }
+
+    &-duration {
+      color: grey;
+      padding: 8px;
+
+      &-preparation-time {
+        color: red;
+      }
+
+      &-cooking-time {
+        color: green;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  img {
+    height: 50px;
+  }
+
+  p {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  nav {
+    a {
+      display: block;
+    }
+  }
+}
+
+// footer img
+// footer p
+// footer nav
