@@ -67,6 +67,10 @@ const shopName = "Maxima";
 const peopleCount = 500;
 const consentWithPrivacyPolicy = true;
 
+console.log(shopName);
+console.log(peopleCount);
+console.log(consentWithPrivacyPolicy);
+
 const test = "Rokas";
 
 // If (sąlygos)
