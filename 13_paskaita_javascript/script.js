@@ -151,3 +151,19 @@ let sum = 10 + 5; // 15
 let substraction = sum - 7; // 8
 let multi = sum * substraction; // 15 * 8
 let division = 6 / 3;
+
+let xyz = -200;
+let xyzw = 1 < -200; // false
+let xyzwx = xyzw < 9; // false < 9, 0 < 9
+// 0 == '' arba 0 == false
+
+console.log(0 == ""); // true
+console.log(0 == false); // true
+
+if (1 < xyz < 9) {
+  console.log("Works");
+}
+
+if (xyz > 1 && xyz < 9) {
+  console.log("is less");
+}
