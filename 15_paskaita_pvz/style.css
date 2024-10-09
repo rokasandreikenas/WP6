@@ -62,9 +62,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 0;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-out;
+    width: 50%; /* Set initial width to 50% */
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for both opening and closing */
     overflow-y: hidden; /* Disable scroll */
   }
 
@@ -78,8 +78,7 @@ header {
   }
 
   .nav-active {
-    width: 50%;
-    transform: translateX(0%);
+    transform: translateX(0); /* Slide in from left */
   }
 
   .toggle .line1 {
