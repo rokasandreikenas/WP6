@@ -1,6 +1,6 @@
 const nameElementById = document.getElementById("name");
 const nameElementByQuerySelector = document.querySelector("#name"); // pagal id
-
+// .class arba p
 const listItem = document.querySelector(".list-item"); // pagal klasę
 const allListItems = document.querySelectorAll(".list-item"); // pagal klasę visi elementai
 
@@ -52,5 +52,5 @@ const animalListElement = document.getElementById("animal-list"); // ul
 addAnimalButton.addEventListener("click", function () {
   const newListItem = document.createElement("li"); // sukuriam naują elementą
   newListItem.textContent = "Asiliukas";
-  animalListElement.appendChild(newListItem); // pridedam į norimą elementą kaip vaikinį
+  animalListElement.append(newListItem); // pridedam į norimą elementą kaip vaikinį
 });
