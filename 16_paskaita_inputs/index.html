@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .error {
+        padding: 0;
+        margin: 0;
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="registration-form">
+      <label for="name">Vardas:</label>
+      <input type="text" id="name" name="name" />
+      <br />
+      <label for="email">El. paštas:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="message">Žinutė:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br />
+      <label for="age">Metai:</label>
+      <input type="number" id="age" name="age" />
+      <p class="error" id="ageRequirement">
+        Į mokymus priimame tik nuo 18 metų.
+      </p>
+      <br />
+      <input type="radio" id="vyras" name="gender" value="vyras" />
+      <label for="vyras">Vyras</label>
+      <input type="radio" id="moteris" name="gender" value="moteris" />
+      <label for="moteris">Moteris</label>
+      <input type="radio" id="kita" name="gender" value="kita" />
+      <label for="kita">Kita</label><br />
+
+      <br />
+      <label for="nationality">Pilietybe</label>
+      <br />
+      <select name="nationality" id="nationality"></select>
+      <br />
+      <input
+        type="checkbox"
+        id="privacyPolicy"
+        name="privacyPolicy"
+        value="privacyPolicy"
+      />
+      <label for="privacyPolicy">Sutinku su privatumo politika</label>
+      <p class="error" id="privacyPolicyError">Turi sutitkti!</p>
+      <br />
+      <input type="submit" value="Siųsti" />
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
